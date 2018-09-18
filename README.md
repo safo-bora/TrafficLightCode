@@ -1,5 +1,5 @@
-# TrafficLightCode
-(2013 year) - Build Status about Jenkins 
+## TrafficLightCode
+(2013 year) - Build Status from Jenkins on Traffic Light
 
 ## Components:
 
@@ -17,4 +17,17 @@ Cable PVS 2х0.75mm (10 meters)
 
 USB Extension Cable
 
-[[http://2.bp.blogspot.com/-9bA_6xEIkYo/Vg_oW1hzwBI/AAAAAAAACUs/CURUL5-_L2Y/s640/unnamed.jpg]]
+## Command line color changing example (Windows):
+
+
+Turn ON green:
+{project path}\MP710.exe CMD=100 PRG=15 PORT11=128:NC PORT12=0:NC PORT13=0:NC
+
+Turn ON yellow:
+{project path}\MP710.exe CMD=100 PRG=15 PORT11=0:NC PORT12=128:NC PORT13=0:NC
+
+Turn ON red:
+{project path}\MP710.exe CMD=100 PRG=15 PORT11=0:NC PORT12=0:NC PORT13=128:NC
+
+Turn OFF all:
+{project path}\MP710.exe CMD=100 PRG=15 PORT11=0:NC PORT12=0:NC PORT13=0:NC
